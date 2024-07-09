@@ -1,0 +1,5 @@
+make для мап, слайсов, каналов.
+When you use the make function to create slices, maps, or channels, they are allocated on the heap.
+new для любого типа, возвращает указатель на нулевое значение этого типа
+
+make возвращает сам объект, new выделяет память и возвращает указатель на созданный объект

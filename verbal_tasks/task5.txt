@@ -1,0 +1,14 @@
+В Go размер структуры определяется суммой размеров её полей, и если полей нет, размер структуры будет равен 0 байт.
+
+package main
+
+import (
+	"fmt"
+	"unsafe"
+)
+
+func main() {
+	a := struct{}{}
+
+	fmt.Println(unsafe.Sizeof(a))
+}
